@@ -5,8 +5,10 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
 const props = defineProps({
   msg: String,
 })
-let count = 0
+let count = ref(0)
 </script>
