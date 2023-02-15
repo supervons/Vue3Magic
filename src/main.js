@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './index.css'
-import 'element-plus/lib/theme-chalk/index.css';
+import 'element-plus/dist/index.css';
 import { ElButton, ElSelect } from 'element-plus';
 
 const app = createApp(App)
