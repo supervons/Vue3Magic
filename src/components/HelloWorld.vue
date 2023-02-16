@@ -1,14 +1,23 @@
 <template>
   <h1>{{ msg }}</h1>
-  <button @click="count++">count is: {{ count }}</button>
+  <button @click="add">count is: {{ count }}</button>
   <p>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
+<p>{{ hobby }}</p>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, reactive } from 'vue'
 
 const props = defineProps({
   msg: String,
 })
+
+let hobby = reactive(['刷剧', '吃鸡', '睡觉'])
+
 let count = ref(0)
+
+function add() {
+  count.value++
+  hobby[2] = '打豆豆'
+}
 </script>
