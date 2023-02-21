@@ -7,7 +7,21 @@ const config = defineConfig(({command, mode})=>{
     console.log('This is dev mode and BaseURL is : ' + env.BaseURL);
   }
   return {
-    plugins: [vue()]
+    plugins: [vue()],
+    server: {
+      port: 8888,
+      open: true,
+      proxy: {
+        '/api': {
+          target: 'http://jsonplaceholder.typicode.com',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api/, ''),
+        },
+      }
+    },
+    build: {
+      outDir: 'supervons'
+    }
   }
 })
 
