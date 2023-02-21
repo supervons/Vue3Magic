@@ -5,8 +5,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue';
+import HelloWorld from './components/HelloWorld.vue';
 let name = ref('流星')
 let age = 18
 //方法
