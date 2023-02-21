@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --mode=dev",
-    "build": "vite build"
+    "build": "vite build",
+    "build-cdn": "vite build --base=https://www.baidu.com/"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
