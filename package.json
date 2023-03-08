@@ -15,5 +15,16 @@
     "@vue/compiler-sfc": "^3.0.4",
     "sass": "^1.58.3",
     "vite": "^4.1.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": true,
+    "tabWidth": 2,
+    "useTabs": false,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "arrowParens": "avoid",
+    "proseWrap": "preserve",
+    "printWidth": 80
   }
 }
