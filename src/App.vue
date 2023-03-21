@@ -1,12 +1,15 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <KeyDown/>
+  <div>CMD + K 弹出问候语</div>
   <el-button type="primary" @click="say">主要按钮{{ name }}</el-button>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 import HelloWorld from './components/HelloWorld.vue';
+import KeyDown from './components/KeyDown.vue';
 let name = ref('流星');
 let age = 18;
 //方法

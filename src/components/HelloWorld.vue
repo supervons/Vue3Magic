@@ -38,7 +38,7 @@ watchEffect(() => {
 });
 
 onMounted(() => {
-  alert(123);
+  console.log(`this is mounted...`);
 });
 
 function add() {
