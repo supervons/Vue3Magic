@@ -10,6 +10,7 @@
   <a v-for="item of h5PayList" :key="item.name" :href="item.url">
     {{ `${item.name}打开支付宝` }}<br
   /></a>
+  <a href="weixin://dl/business/?t= *TICKET*">打开微信</a>
 </template>
 
 <script setup>
